@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import Timer from './components/timer.js';
 
-class App extends Component {
+class App extends React.Component {
+
   render() {
+    
     return (
-      <div className="App">
+      <div className='App'>
 
-        <div className="container">
-          <p>Lorem ipsum</p>
+        <div className='container'>
+          <Timer />
         </div>
       </div>
     );
@@ -15,3 +17,4 @@ class App extends Component {
 }
 
 export default App;
+  
