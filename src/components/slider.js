@@ -9,19 +9,18 @@ class Slider extends React.Component {
    }
 
   handleChange(e) {
-      this.setState({session:+e.target.value});
+      this.setState({session:+e.target.value-1});
       this.props.doUpdate(this.state.session);
   }
 
   render() {
     return (
       <div>
-      <p>{this.state.session}</p>
       <input className="slider"
          type="range"
          value={this.state.session}
          min={this.props.min}
-         max={this.props.max}
+         max={this.props.max+1}
          onChange={(e) => this.handleChange(e)}     
          step={this.props.step} />
       </div>

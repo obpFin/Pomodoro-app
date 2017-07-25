@@ -16,16 +16,21 @@ class App extends React.Component {
 
     return (
       <div className='App'>
+        <div className=''>
+          <p className="marker">Pomodoro App</p>
+        </div>
         <div className='container'>
           <Timer />
           <table>
             <tbody>
               <tr>
                 <td>
+                  <p className='sessionLabel'>Session</p>
                   <Session />
                 </td>
                 <td>
                   <Break />
+                  <p className='breakLabel'>Break</p>
                 </td>
               </tr>
             </tbody>

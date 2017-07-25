@@ -19,8 +19,9 @@ update = (e) => {
   render() {
     return (
       <div>
-        <div className='session controller'>
-          <Slider  min='1' max='10' doUpdate={this.update}
+        <div className='break controller'>
+          <p className='amount'>{this.state.break}<span> minutes</span></p>
+          <Slider min='0' max='9' doUpdate={this.update}
             step='1' />
         </div>
       </div>

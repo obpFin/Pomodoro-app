@@ -10,6 +10,9 @@ class Session extends React.Component {
     this.session = 0;
    }
 
+   componentDidMount() {
+   }
+
   update = (e) => {
       this.setState({
         session: e
@@ -20,12 +23,13 @@ class Session extends React.Component {
       return (
         <div>
           <div className='session controller'>
-            <Slider  min='1' max='10' doUpdate={this.update}
+            <p className='amount'>{this.state.session}<span> minutes</span></p>
+            <Slider  min='1' max='9' doUpdate={this.update}
               step='1' />
           </div>
         </div>
       );
     }
-}
+  }
 
 export default Session;
