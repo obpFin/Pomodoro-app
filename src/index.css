@@ -33,8 +33,6 @@ span {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.29);
-    #background-image:linear-gradient(to bottom, rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.6) 100%),
-        #url('./images/pexels-photo-235992-min.jpeg');
 }
 
 .container {
@@ -55,6 +53,25 @@ span {
     margin: 0 auto;
 }
 
+.mainTimer {
+  margin:0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 4em;
+}
+
+.start {
+  font-size: 2em!important;
+}
+
+.start.tomato:hover {
+  cursor: pointer;
+  font-size: 2.2em!important;
+  background-color: #890000;
+}
+
 .controller {
     width: 200px;
     height: 140px;
@@ -64,15 +81,14 @@ span {
     border-radius: 30px;
 }
 
-
 .session {
-    margin-left:200px;
-    float: left;
+  margin-left:200px;
+  float: left;
 }
 
 .break {
-    margin-left:220px;
-    float: right;
+  margin-left:220px;
+  float: right;
 }
 
 .marker {
@@ -82,8 +98,7 @@ span {
   position: fixed;
   margin-left: 25px; 
   margin-top: 10px; 
-    border-bottom: 4px solid #f00;
-
+  border-bottom: 4px solid #f00;
 }
 
 .sessionLabel {
@@ -92,7 +107,7 @@ span {
   font-family: 'Amatic SC', cursive;
   position: fixed;
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 7%;
 }
 
 .breakLabel {
@@ -101,7 +116,7 @@ span {
   font-family: 'Amatic SC', cursive;
   position: fixed;
   font-weight: bold;
-  margin-left: 48%;
+  margin-left: 45%;
 }
 
 .amount {

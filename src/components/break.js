@@ -20,8 +20,8 @@ update = (e) => {
     return (
       <div>
         <div className='break controller'>
-          <p className='amount'>{this.state.break}<span> minutes</span></p>
-          <Slider min='0' max='9' doUpdate={this.update}
+          <p className='amount'>{this.props.breakTimer}<span> minutes</span></p>
+          <Slider min='0' max='9' doUpdate={this.props.update}
             step='1' />
         </div>
       </div>
