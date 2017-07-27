@@ -11,7 +11,7 @@ class App extends React.Component {
 
     this.state = {
       session:1,
-      break:1,
+      break:0,
       showTimer:false
     }
   }
