@@ -19,6 +19,7 @@ class App extends React.Component {
   updateSession = (e) => {
     console.log("update state",this.state.session);
       this.setState({
+        showTimer:false,
         session: e
       })
   }
