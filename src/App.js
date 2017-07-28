@@ -45,7 +45,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <div className=''>
+        <div>
           <p className="marker">Pomodoro App</p>
         </div>
         <div className='container'>
