@@ -11,7 +11,7 @@ class App extends React.Component {
 
     this.state = {
       session:1,
-      break:0,
+      break:1,
       showTimer:false
     }
   }
@@ -27,6 +27,7 @@ class App extends React.Component {
   updateBreak = (e) => {
     console.log("update state",this.state.break);
       this.setState({
+        showTimer:false,
         break: e
       })
   }
