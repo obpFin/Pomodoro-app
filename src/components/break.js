@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from './slider.js';
+import PropTypes from 'prop-types';
 
 const Break = (props) => (
 
@@ -12,5 +13,10 @@ const Break = (props) => (
   </div>
   
 );
+
+Break.propTypes = {
+  sessionTimer: PropTypes.number,
+  update: PropTypes.func
+};
 
 export default Break;

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactCountdownClock from 'react-countdown-clock';
 import Sound from 'react-sound';
+import PropTypes from 'prop-types';
 
 class Timer extends React.Component {
 
@@ -89,5 +90,12 @@ class Timer extends React.Component {
     );
   }
 }
+
+Timer.propTypes = {
+  start: PropTypes.func,
+  update: PropTypes.func,
+  session:PropTypes.number,
+  break:PropTypes.number
+};
 
 export default Timer;

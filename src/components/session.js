@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from './slider.js';
+import PropTypes from 'prop-types';
+
 
 const Session = props => (
 
@@ -12,5 +14,10 @@ const Session = props => (
   </div>
   
 );
+
+Session.propTypes = {
+  sessionTimer: PropTypes.number,
+  update: PropTypes.func
+};
 
 export default Session;
